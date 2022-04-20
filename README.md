@@ -1,3 +1,4 @@
 # Flask-project-for-study
-study 
-THIS IS HOW IT STARTS
+Vertual invironment creared.
+app.py file created
+server successfully started 
