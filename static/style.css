@@ -1,6 +1,13 @@
 h1 {
-	background-color: yellow;
+	color: 233.0.0; 
+	text-decoration-line: underline;
+        text-decoration-thickness: 3px;
+	text-shadow: 3px 2px 5px blue;
+
 }
 body {
 	background-color: green;
+}
+p {
+	font-size: 3em;
 }

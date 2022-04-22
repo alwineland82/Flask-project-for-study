@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/<x>/')
 def index(x):
-    x = float(x)
-    pi = 3.14
+    x = int(x)
     return render_template("index.html", 
-                            text=f"Circle area = {x ** 2 * pi}")
+                            x=x,
+                            eval = eval)
