@@ -9,12 +9,8 @@
 
 	<body>
 		<h1>Hello Flask, i love Python!!!!</h1>
-		{% if x == 1982 %}
-		<p>****Welcome to batcave****</p>
-		{% else %}
-		<p>Wrong!!!!</p>
-		{% endif %}
-		<p></p>
+		{% import "macros.html" as macros %}
+		{{ macros.foo(3, 7) }}
 	</body>
 
 </html>

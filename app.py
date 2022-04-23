@@ -3,9 +3,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/<x>/')
-def index(x):
-    x = int(x)
-    return render_template("index.html", 
-                            x=x,
-                            eval = eval)
+def boo(x, y):
+    return x + y
+
+
+@app.route('/')
+def index():
+    return render_template("index.html", boo=boo)
